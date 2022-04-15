@@ -25,6 +25,7 @@ const Contact = () => {
 
   const handlesubmit=()=>{
     // alert(name+ '' +email +''+ phone +' '+ desc)
+    e.preventDefault()
     const data = {phone, name, email, desc};
     fetch('http://localhost:3000/api/postcontact', {
       method: 'POST', 
